@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLy-0c-HUq">
+                                <state key="normal" title="Up">
+                                    <color key="titleColor" red="1" green="0.84514182810000005" blue="0.0068374546239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="upAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Og-dd-H9T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koz-Ye-no4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2i5-zn-Sy6"/>
+                                    <constraint firstAttribute="width" constant="114" id="Or8-SJ-AXk"/>
+                                </constraints>
+                                <state key="normal" title="Down">
+                                    <color key="titleColor" red="0.99865792022357702" green="0.28111215842584591" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZG-4B-PGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnB-th-KHe">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5RP-xa-mwQ"/>
+                                    <constraint firstAttribute="width" constant="83" id="fed-d3-WIG"/>
+                                </constraints>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="0.6330879331" green="0.34225729110000003" blue="0.0043697850779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="leftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9q-uM-PxI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxx-Ys-NaC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PYJ-2L-ZMa"/>
+                                    <constraint firstAttribute="width" constant="73" id="cTm-C6-JC1"/>
+                                </constraints>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="1" green="0.23114262841162525" blue="0.29849023732367075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="rightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpG-jm-gUB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-cz-df3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4D4-nb-fd6"/>
+                                    <constraint firstAttribute="width" constant="220" id="ZRr-1z-dru"/>
+                                </constraints>
+                                <state key="normal" title="center">
+                                    <color key="titleColor" red="0.19524100513009568" green="0.20066007724739554" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xlt-t6-Y5S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="height" secondItem="dLy-0c-HUq" secondAttribute="height" id="01d-V3-tMY"/>
+                            <constraint firstItem="aMu-cz-df3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cV-c1-chg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koz-Ye-no4" secondAttribute="bottom" constant="33" id="2qS-HB-Ilw"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="top" secondItem="Xxx-Ys-NaC" secondAttribute="bottom" constant="2" id="4Gi-lN-KdA"/>
+                            <constraint firstItem="dnB-th-KHe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-50" id="8vc-Nf-ijC"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="top" secondItem="dLy-0c-HUq" secondAttribute="top" constant="60" id="KcQ-p8-I1Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aMu-cz-df3" secondAttribute="bottom" id="LF0-YN-bPC"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="width" secondItem="dLy-0c-HUq" secondAttribute="width" id="RrF-V0-i6Z"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="top" secondItem="dnB-th-KHe" secondAttribute="bottom" constant="2" id="Yo2-bQ-abz"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="centerX" secondItem="dLy-0c-HUq" secondAttribute="centerX" id="b7d-Qb-bGR"/>
+                            <constraint firstItem="Xxx-Ys-NaC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="50" id="oyk-6r-wqk"/>
+                            <constraint firstItem="koz-Ye-no4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rEY-Rx-iEg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
